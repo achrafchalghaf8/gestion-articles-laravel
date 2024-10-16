@@ -13,7 +13,7 @@
     "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "true",
-    "APP_URL": "https://gestion-articles-laravel.vercel.app",
+    "APP_URL": "https://vercel.com/achrafs-projects-b5fc6a25/gestion-articles-laravel",
     "APP_KEY": "base64:QTtLhe2a5T+zMM1+BZxNYUqUGQ+zTAy5ma89fRpA1FI=",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
