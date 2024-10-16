@@ -106,4 +106,11 @@ class ArticleController extends Controller
             return response()->json('selection impossible');
     }
 }
+
+
+public function paginationPaginate() { $perPage = request()->input('pageSize', 2); // Récupère la valeur dynamique pour la pagination
+     $articles = Article::with('scategories')->paginate($perPage); // Retourne le résultat en format JSON API 
+     return response()->json([ 'products' => $articles->items(), // Les articles paginés 
+     'totalPages' => $articles->lastPage(), // Le nombre de pages
+      ]); }  
 }

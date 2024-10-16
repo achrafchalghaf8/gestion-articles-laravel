@@ -25,5 +25,7 @@ Route::middleware('api')->group(function() {
     Route::resource("/categories", CategorieController::class);
     Route::resource("/scategories", ScategorieController::class);
     Route::resource("/articles", ArticleController::class);
+    Route::get('/articles/art/paginationPaginate', [ArticleController::class, 'paginationPaginate']);  
+
 
 });
